@@ -15,17 +15,29 @@
     <distributionManagement>
         <repository>
             <id>releases</id>
-            <name>Fenige Releases</name>
-            <url>http://10.5.10.24:8081/repository/maven-fenige-releases/</url>
+            <name>uPaid Releases</name>
+            <url>http://10.5.10.24:8081/repository/maven-upaid-releases/</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
-            <name>Fenige Snapshots</name>
-            <url>http://10.5.10.24:8081/repository/maven-fenige-snapshots/</url>
+            <name>uPaid Snapshots</name>
+            <url>http://10.5.10.24:8081/repository/maven-upaid-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>

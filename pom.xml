@@ -6,7 +6,7 @@
 
     <groupId>pl.upaid.springvalidators</groupId>
     <artifactId>spring-validators</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2-RELEASE</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

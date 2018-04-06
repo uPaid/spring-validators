@@ -11,6 +11,9 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <distribution.management.release.id>artifactory-local</distribution.management.release.id>
+        <distribution.management.snapshot.url>http://artifactory:8081/artifactory/libs-snapshot-local</distribution.management.snapshot.url>
+        <distribution.management.release.url>http://artifactory:8081/artifactory/libs-release-local</distribution.management.release.url>
     </properties>
 
     <dependencies>
